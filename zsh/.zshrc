@@ -21,5 +21,10 @@ alias lt="eza --tree --icons"
 alias cat="bat"
 alias cd="z"
 
+# ─── NVM ──────────────────────────────────────────────────────────────────────
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && source "$(brew --prefix)/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && source "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+
 # ─── Tools (must be last) ─────────────────────────────────────────────────────
 eval "$(zoxide init zsh)"
